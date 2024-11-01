@@ -125,6 +125,6 @@ for(Garment g : garments){
 
 public class GarmentMiniProject {
     public static void main(String[] args) {
-
+        System.out.println("");
     }
 }
