@@ -43,9 +43,9 @@ class Supplier{
     public String id;
     public String name;
     public String contactInfo;
-    private List<Fabric> suppliedFabrics = new ArrayList<>();
+     List<Fabric> suppliedFabrics = new ArrayList<>();
 
-    public void addFabric(Fabric fabric){
+     void addFabric(Fabric fabric){
         suppliedFabrics.add(fabric);
     }
 
@@ -63,7 +63,7 @@ class Order{
     public List<Garment> garments = new ArrayList<>() ;
     public double totalAmount ;
 
-    public void addGarment(Garment garment){
+    void addGarment(Garment garment){
         garments.add(garment);
     }
     public double calculateTotalAmount(){
@@ -82,12 +82,13 @@ class Order{
 
 class Customer{
 
-    String customerId;
-    String name;
-    String email;
-    String phone;
+  public  String customerId;
+   public String name;
+   public String email;
+   public  String phone;
 
     void placeOrder(Order order){
+      order.printOrderDetails();
 
     }
 
@@ -103,15 +104,18 @@ class Inventory{
 
 
     void addGarment(Garment garment){
-
+        garments.add(garment);
     }
 
     void removeGarment(String id){
-
+       garments.remove(id);
     }
 
     Garment findGarment(String id){
-
+for(Garment g : garments){
+    if(g.id == id)
+        return g;
+}
         return null;
 
     }
