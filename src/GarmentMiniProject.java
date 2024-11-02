@@ -11,7 +11,14 @@ class Garment{
     public String color;
     public double price;
     public int stockQuantity;
+    Garment(String id , String name , String description,String size, String color, double price){
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.size = size;
+        this.color = color;
 
+    }
     public void updateStock(int quantity){
         this.stockQuantity = quantity;
     }
