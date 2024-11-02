@@ -17,6 +17,7 @@ class Garment{
         this.description = description;
         this.size = size;
         this.color = color;
+        this.price = price;
 
     }
     public void updateStock(int quantity){
@@ -36,12 +37,19 @@ class Fabric {
     public String color ;
     public double pricePerMeter;
 
+    public Fabric(String id, String type, String color, double pricePerMeter) {
+        this.id = id;
+        this.type = type;
+        this.color = color;
+        this.pricePerMeter = pricePerMeter;
+    }
+
     public double calculateCost(double meters){
         double cost = pricePerMeter * meters;
         return cost;
     }
 
-    Garment g = new Garment();
+   // Garment g = new Garment();
 
 }
 
