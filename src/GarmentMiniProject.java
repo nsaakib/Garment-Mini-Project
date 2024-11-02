@@ -100,7 +100,18 @@ class Order{
     }
 
     public void printOrderDetails() {
-
+        System.out.println("Order ID: " + orderId);
+        System.out.println("Order Date: " + orderDate);
+        System.out.println("Total Amount: " + calculateTotalAmount());
+        System.out.println("--------------------------");
+        System.out.println("Order Details");
+        System.out.println("--------------------------");
+        for (Garment g : garments) {
+            System.out.println("Name: " + g.name);
+            System.out.println("Price: " + g.price);
+            System.out.println("Description: " + g.description);
+            System.out.println("--------------------------");
+        }
     }
 
 }
@@ -112,6 +123,9 @@ class Customer{
    public String name;
    public String email;
    public  String phone;
+
+
+
 
     void placeOrder(Order order){
       order.printOrderDetails();
