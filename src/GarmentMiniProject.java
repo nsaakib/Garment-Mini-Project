@@ -124,7 +124,12 @@ class Customer{
    public String email;
    public  String phone;
 
-
+    public Customer(String customerId, String name, String email, String phone) {
+        this.customerId = customerId;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
 
 
     void placeOrder(Order order){
