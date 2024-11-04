@@ -28,6 +28,10 @@ class Garment{
         return discount;
     }
 
+
+    //Fabric f = new Fabric(String id, String name, String color, double pricePerMeter);
+    //Inventory i = new Inventory();
+
 }
 
 class Fabric {
@@ -98,6 +102,8 @@ class Order{
         }
         return totalAmount;
     }
+    
+
 
     public void printOrderDetails() {
         //System.out.println("Order ID: " + orderId);
