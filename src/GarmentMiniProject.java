@@ -83,9 +83,9 @@ class Order{
     public List<Garment> garments = new ArrayList<>() ;
     public double totalAmount ;
 
-    Order(String orderId, Date orderDate, double totalAmount){
+    Order(String orderId, double totalAmount){
         this.orderId = orderId;
-        this.orderDate = orderDate;
+        //this.orderDate = orderDate;
         this.totalAmount = totalAmount;
     }
 
@@ -100,9 +100,9 @@ class Order{
     }
 
     public void printOrderDetails() {
-        System.out.println("Order ID: " + orderId);
-        System.out.println("Order Date: " + orderDate);
-        System.out.println("Total Amount: " + calculateTotalAmount());
+        //System.out.println("Order ID: " + orderId);
+       // System.out.println("Order Date: " + orderDate);
+       // System.out.println("Total Amount: " + calculateTotalAmount());
         System.out.println("--------------------------");
         System.out.println("Order Details");
         System.out.println("--------------------------");
@@ -170,6 +170,6 @@ for(Garment g : garments){
 
 public class GarmentMiniProject {
     public static void main(String[] args) {
-        System.out.println("h");
+
     }
 }
