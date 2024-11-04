@@ -83,9 +83,9 @@ class Order{
     public List<Garment> garments = new ArrayList<>() ;
     public double totalAmount ;
 
-    Order(String orderId, double totalAmount){
+    Order(String orderId, Date orderDate, double totalAmount){
         this.orderId = orderId;
-        //this.orderDate = orderDate;
+        this.orderDate = orderDate;
         this.totalAmount = totalAmount;
     }
 
